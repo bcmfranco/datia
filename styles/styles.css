@@ -1,6 +1,35 @@
+@font-face{
+    font-family: Lato;
+    src: url('Lato-Regular.ttf');
+}
+
+
 body{
-    background-image: url("../images/bison_1.webp");
+    background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url("../images/bison_1.webp");
     background-repeat: no-repeat;
     background-size: 2000px;
-    background-position-x: -500px;
+    background-position-x: -1500px;
+    background-position-y: -250px;
+    font-family: Lato;
 }
+
+
+h1{
+    background-color: lightblue;
+    opacity: 0.5;
+    color: white;
+    font-size: 50px;
+    padding: 0px;
+}
+
+
+
+
+/******* MEDIA QUERIES *******/
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-position-x: -500px;
+        background-position-y: unset;
+    }
+  }
