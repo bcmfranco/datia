@@ -1,0 +1,48 @@
+body{
+    width: 80%;
+    margin: 0 auto;
+    font-family: monospace;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+}
+
+
+/* VARS */
+
+.ligth_back{
+    background-color: var(--light_back);
+    color: var(--light_fonts);
+}
+
+.dark_back{
+    background-color: var(--light_fonts);
+    color: var(--light_back);
+}
+
+.light_borders{
+    border: 1px solid var(--light_borders);
+}
+
+.dark_borders{
+    border: 1px solid var(--light_back);
+}
+
+:root {
+    /* light mode */
+    --borders: rgb(19, 19, 19);
+    --fonts: rgb(46, 46, 46);
+    --shadows: rgb(114, 114, 114);
+    --filling: rgb(140, 140, 140);
+    --back: rgb(247, 247, 247);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 600px) {
+    body{
+        max-width: 360px;
+        margin: auto;
+    }
+}
