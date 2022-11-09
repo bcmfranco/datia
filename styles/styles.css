@@ -15,21 +15,48 @@ body{
 
 
 h1{
-    background-color: lightblue;
+    background-color: var(--lightblue);
     opacity: 0.5;
-    color: white;
+    color: var(--white);
     font-size: 50px;
     padding: 0px;
 }
 
+.collapsible {
+    background-color: var(--white);
+    color: var(--gray);
+    opacity: 0.8;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: var(--white);
+    opacity: 0.8;
+  }
 
 
+/******* ENGINE *******/
 
-/******* MEDIA QUERIES *******/
+:root {
+    --gray: rgb(68,68,68);
+    --white: rgb(241,241,241);
+    --lightblue: rgb(148, 195, 205);
+}
+
 
 @media only screen and (min-width: 600px) {
     body {
         background-position-x: -500px;
         background-position-y: unset;
+        width: 800px;
     }
   }
