@@ -23,9 +23,8 @@ h1{
 }
 
 .collapsible {
-    background-color: var(--white);
+    background-color: rgba(255,255,255,.3);
     color: var(--gray);
-    opacity: 0.8;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -33,15 +32,18 @@ h1{
     text-align: left;
     outline: none;
     font-size: 15px;
-  }
+    color: var(--gray);
+    font-size: 20px;
+    margin-top: 10px;
+}
   
-  .content {
+.content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: var(--white);
-    opacity: 0.8;
-  }
+    background-color: rgba(255,255,255,.3);
+    color: var(--gray);
+}
 
 
 /******* ENGINE *******/
